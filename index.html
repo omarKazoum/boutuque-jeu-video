@@ -5,53 +5,13 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil du magasin de vidéo</title>
-    <style>
-        *{font-family: Bahnschrift;
-        }
-        body,header{padding: 0px}
-        #top-header-area li:hover{
-            text-decoration: underline;
-        }
-        #top-header-area{
-            display: table;
-            font-weight: bold;
-            font-size: 17px;
-        }
-        #logo img{
-            width:150px;
-            height:70px;
-        }
-        #navigation_containner,#logo{
-            display: table-cell;
-            vertical-align: middle;
-            padding-right: 20px;
-        }
-        #bottom-header-area ul{
-            padding-left:0px;
-        }
-        /* style for menu items*/
-        nav ul li{
-            text-align: left;
-            padding: 15px;
-            list-style-type: none;
-            display: inline;
-        }
-        /** remove default style*/
-        li a{cursor:pointer;
-            color:black;
-            text-decoration: none;
-        }
-        .video-item-con{
-            border: solid 1px black;
-            padding: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
         <!-- our webiste log here-->
         <div id="top-header-area">
-            <a id="logo">
+            <a id="logo" href="#">
                 <img src="images/logo.png"/>
             </a>
             <nav id="navigation_containner">
@@ -85,11 +45,11 @@
                 <h3 class="product-title">
                     video title 1
                 </h3>
-                <p class="product-price-light">
+                <b class="product-price-light">
                     RRP:£18.99
-                </p>
+                </b>
                 <b class="product-price-bold">
-                    Price you pay £9.99
+                    Price you pay<span class="text-highlighted"> £9.99</span>
                 </b>
                 <b class="product-saving">
                     Your saving £9
@@ -106,7 +66,7 @@
                     RRP:£18.99
                 </p>
                 <b class="product-price-bold">
-                    Price you pay £9.99
+                    Price you pay<span class="text-highlighted"> £9.99</span>
                 </b>
                 <b class="product-saving">
                     Your saving £9
@@ -122,7 +82,7 @@
                     RRP:£18.99
                 </p>
                 <b class="product-price-bold">
-                    Price you pay £9.99
+                    Price you pay<span class="text-highlighted"> £9.99</span>
                 </b>
                 <b class="product-saving">
                     Your saving £9
@@ -137,7 +97,7 @@
                     RRP:£18.99
                 </p>
                 <b class="product-price-bold">
-                    Price you pay £9.99
+                    Price you pay<span class="text-highlighted"> £9.99</span>
                 </b>
                 <b class="product-saving">
                     Your saving £9
@@ -145,5 +105,8 @@
             </a>
         </section>
     </main>
+<footer>
+    <!-- footer is empty for now-->
+</footer>
 </body>
 </html>
