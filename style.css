@@ -50,6 +50,7 @@ li a{cursor:pointer;
 }
 .product-title{
     color:black;
+    line-height: 8px;
 }
 .product-price-light{
     color:#B6B6B6;
