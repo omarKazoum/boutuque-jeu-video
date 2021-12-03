@@ -1,0 +1,39 @@
+*{font-family: Bahnschrift;
+}
+body,header{padding: 0px}
+#top-header-area li:hover{
+    text-decoration: underline;
+}
+#top-header-area{
+    display: table;
+    font-weight: bold;
+    font-size: 17px;
+}
+#logo img{
+    width:150px;
+    height:70px;
+}
+#navigation_containner,#logo{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+#bottom-header-area ul{
+    padding-left:0px;
+}
+/* style for menu items*/
+nav ul li{
+    text-align: left;
+    padding: 15px;
+    list-style-type: none;
+    display: inline;
+}
+/** remove default style*/
+li a{cursor:pointer;
+    color:black;
+    text-decoration: none;
+}
+.video-item-con{
+    border: solid 1px black;
+    padding: 15px;
+}
