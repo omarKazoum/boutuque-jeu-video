@@ -1,0 +1,149 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil du magasin de vidéo</title>
+    <style>
+        *{font-family: Bahnschrift;
+        }
+        body,header{padding: 0px}
+        #top-header-area li:hover{
+            text-decoration: underline;
+        }
+        #top-header-area{
+            display: table;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        #logo img{
+            width:150px;
+            height:70px;
+        }
+        #navigation_containner,#logo{
+            display: table-cell;
+            vertical-align: middle;
+            padding-right: 20px;
+        }
+        #bottom-header-area ul{
+            padding-left:0px;
+        }
+        /* style for menu items*/
+        nav ul li{
+            text-align: left;
+            padding: 15px;
+            list-style-type: none;
+            display: inline;
+        }
+        /** remove default style*/
+        li a{cursor:pointer;
+            color:black;
+            text-decoration: none;
+        }
+        .video-item-con{
+            border: solid 1px black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- our webiste log here-->
+        <div id="top-header-area">
+            <a id="logo">
+                <img src="images/logo.png"/>
+            </a>
+            <nav id="navigation_containner">
+                <ul>
+                <li><a href="#">Video to rent</a></li>
+                <li><a href="#">Video to buy</a></li>
+                <li><a href="#">Used DVDs</a></li>
+                <li><a href="#">Offers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="bottom-header-area">
+            <ul>
+             <li><a href="#">Home</a></li>/
+             <li><a href="#">Used DVDs</a></li>/
+             <li><a href="#">Less than £10</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Videos less than £10</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, ut tristique sapien tristique et
+            </p>
+        </section>
+        <section id="products-list">
+            <!-- produit 1-->
+            <a href="#" class="video-item-con">
+                <img src="images/product-1.png"/>
+                <h3 class="product-title">
+                    video title 1
+                </h3>
+                <p class="product-price-light">
+                    RRP:£18.99
+                </p>
+                <b class="product-price-bold">
+                    Price you pay £9.99
+                </b>
+                <b class="product-saving">
+                    Your saving £9
+                </b>
+            </a>
+
+            <!-- produit 2-->
+            <a href="#" class="video-item-con">
+                <img src="images/product-2.png"/>
+                <h3 class="product-title">
+                    video title 2
+                </h3>
+                <p class="product-price-light">
+                    RRP:£18.99
+                </p>
+                <b class="product-price-bold">
+                    Price you pay £9.99
+                </b>
+                <b class="product-saving">
+                    Your saving £9
+                </b>
+            </a>
+            <!-- produit 3-->
+            <a href="#" class="video-item-con">
+                <img src="images/product-3.png"/>
+                <h3 class="product-title">
+                    video title 3
+                </h3>
+                <p class="product-price-light">
+                    RRP:£18.99
+                </p>
+                <b class="product-price-bold">
+                    Price you pay £9.99
+                </b>
+                <b class="product-saving">
+                    Your saving £9
+                </b>
+            </a><!-- produit 4-->
+            <a href="#" class="video-item-con">
+                <img src="images/product-4.png"/>
+                <h3 class="product-title">
+                    video title 4
+                </h3>
+                <p class="product-price-light">
+                    RRP:£18.99
+                </p>
+                <b class="product-price-bold">
+                    Price you pay £9.99
+                </b>
+                <b class="product-saving">
+                    Your saving £9
+                </b>
+            </a>
+        </section>
+    </main>
+</body>
+</html>
