@@ -4,6 +4,9 @@ body,header{padding: 0px}
 #top-header-area li:hover{
     text-decoration: underline;
 }
+#bottom-header-area li:hover{
+    cursor: pointer;
+}
 #top-header-area{
     display: flex;
     align-items: center;
@@ -43,6 +46,7 @@ li a{cursor:pointer;
     height: 120px;
 }
 .video-item-con{
+    display: inline-block;
     border-radius:5px;
     margin:5px;
     border: solid 1px #00000077;
@@ -71,4 +75,12 @@ li a{cursor:pointer;
 .text-highlighted{
     text-decoration: underline;
     text-underline-color: #A9A9A9;
+}
+#bottom-header-area li+li::before{
+    content: "/\00a0";
+    margin: 15px;
+    padding:5px;
+}
+.active a{
+    text-decoration: underline;
 }
