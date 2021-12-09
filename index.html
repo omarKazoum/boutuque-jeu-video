@@ -1,47 +1,66 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Page d'accueil du magasin de vidéo</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
-        <!-- our webiste log here-->
-        <div id="top-header-area">
-            <a id="logo" href="#">
-                <img src="images/logo.png"/>
-            </a>
-            <nav id="navigation_containner">
-                <ul>
-                <li><a href="#">Video to rent</a></li>
-                <li><a href="#">Video to buy</a></li>
-                <li><a href="#">Used DVDs</a></li>
-                <li><a href="#">Offers</a></li>
+        <section class="header-top-section">
+            <span class="logo-con">
+                <img src="images/logo.png" alt="site logo" />
+            </span>
+            <span class="nav-desktop-con">
+                <nav>
+                    <ul>
+                    <li><a href="#">Video to rent</a></li>
+                    <li><a href="#">Video to buy</a></li>
+                    <li><a href="#">Used DVDs</a></li>
+                    <li><a href="#">Offers</a></li>
                 </ul>
-            </nav>
-        </div>
-        <nav id="bottom-header-area">
-            <ul>
-             <li><a href="#">Home</a></li>
-             <li class="active"><a href="#">Used DVDs</a></li>
-             <li><a href="#">Less than £10</a></li>
+                </nav>
+            </span>
+            <span class="nav-mobile-con">
+                <span class="drop-down-container">
+                    <span class="drop-down-btn">
+                        <img src="images/menu_icon.svg" >
+                    </span>
+                    <ul class="drop-down-content">
+                        <li><a href="#">Video to rent</a></li>
+                        <li><a href="#">Video to buy</a></li>
+                        <li><a href="#">Used DVDs</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </span>
+            </span>
+        </section>
+        <section class="header-bottom-section">
+        </section>
+        <section class="header-bottom-section">
+            <ul class="nav-breadcamps-con">
+                <li class="item-text"><a href="#">Home</a></li>
+                <li class="slash">/</li>
+                <li class="item-text"><a href="#">Used DVDs</a></li>
+                <li class="slash">/</li>
+                <li class="item-text active"><a href="#">Less than £10</a></li>
             </ul>
-        </nav>
+        </section>
     </header>
+
     <main>
-        <section>
-            <h1>Videos less than £10</h1>
-            <p>
+        <section class="text-section">
+            <h1 class="text-title">Videos less than £10</h1>
+            <p class="text-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum non purus quis vestibulum. Pellentesque ultricies quam lacus, ut tristique sapien tristique et
             </p>
         </section>
         <section id="products-list">
             <!-- produit 1-->
             <a href="#" class="video-item-con">
-                <img src="images/product-1.png"/>
+                <img alt="product image" src="images/product-1.png"/>
                 <h3 class="product-title">
                     video title 1
                 </h3>
@@ -58,7 +77,7 @@
 
             <!-- produit 2-->
             <a href="#" class="video-item-con">
-                <img src="images/product-2.png"/>
+                <img alt="product image" src="images/product-2.png"/>
                 <h3 class="product-title">
                     video title 2
                 </h3>
@@ -74,13 +93,11 @@
             </a>
             <!-- produit 3-->
             <a href="#" class="video-item-con">
-                <img src="images/product-3.png"/>
+                <img alt="product image" src="images/product-3.png"/>
                 <h3 class="product-title">
                     video title 3
                 </h3>
-                <p class="product-price-light">
-                    RRP:£18.99
-                </p>
+                <p class="product-price-light">RRP:£18.99</p>
                 <b class="product-price-bold">
                     Price you pay<span class="text-highlighted"> £9.99</span>
                 </b>
@@ -89,7 +106,7 @@
                 </b>
             </a><!-- produit 4-->
             <a href="#" class="video-item-con">
-                <img src="images/product-4.png"/>
+                <img alt="product image" src="images/product-4.png" alt="site logo"  />
                 <h3 class="product-title">
                     video title 4
                 </h3>
@@ -105,8 +122,5 @@
             </a>
         </section>
     </main>
-<footer>
-    <!-- footer is empty for now-->
-</footer>
 </body>
 </html>
